@@ -1,0 +1,1 @@
+deregister ALL=(ALL) NOPASSWD:/var/ossec/bin/manage_agents
