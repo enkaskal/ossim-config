@@ -1,0 +1,7 @@
+# ossec remote authentication daemon
+# http://ossec-docs.readthedocs.io/en/lateset/programs/ossec-authd.html
+check host localhost-authd with address 127.0.0.1
+      group authd
+      start program = "/root/authd.sh"
+      stop program = "/usr/bin/killall ossec-authd"
+      if failed host 127.0.0.1 port 1515 type tcp then restart
