@@ -7,7 +7,7 @@ SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 ###m h  dom mon dow   command
-0 */6 * * * /usr/bin/alienvault-update -q --feed > /dev/null 2>&1
+`0 */6 * * * /usr/bin/alienvault-update -q --feed > /dev/null 2>&1`
 
 # mail aliases
 echo "monit: root" >> /etc/aliases
