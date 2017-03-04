@@ -11,6 +11,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # mail aliases
 `echo "monit: root" >> /etc/aliases`
+
 `echo "root: root@cryp7.net" >> /etc/aliases`
 
 # OSSEC authd
