@@ -1,0 +1,13 @@
+/var/log/sophos-utm.log
+{
+  rotate 4 # save 4 days of logs
+  daily # rotate files daily
+  missingok
+  notifempty
+  compress
+  delaycompress
+  sharedscripts
+  postrotate
+  invoke-rc.d rsyslog reload > /dev/null
+  endscript
+}
