@@ -1,4 +1,4 @@
-/var/log/range/esets.log
+/var/log/eset.log
 {
 	rotate 4 # save 4 days of logs
 	daily # rotate files daily
@@ -8,6 +8,6 @@
 	delaycompress
 	sharedscripts
 	postrotate
-	invoke-rc.d rsyslog reload > /dev/null
+	  invoke-rc.d rsyslog rotate > /dev/null
 	endscript
 }
